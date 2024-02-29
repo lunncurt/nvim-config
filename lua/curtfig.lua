@@ -1,3 +1,9 @@
+--set indent spacing
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=2")
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
+
 --linenumbers, show relative numbers, highlight current line
 vim.cmd("set signcolumn=auto")
 vim.cmd("set number")
