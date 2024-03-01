@@ -11,6 +11,9 @@ return{
 		config = function()
 				vim.keymap.set('n', "<leader>nt", ":Neotree filesystem reveal right<CR>")
 				vim.keymap.set('n', "<leader>nc", ":Neotree filesystem close<CR>")
+        require("neo-tree").setup({
+            hijack_netrw_behavior = "open_default"
+        })
 			end
 	}
 }
