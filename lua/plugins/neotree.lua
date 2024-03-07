@@ -9,7 +9,7 @@ return{
 			"3rd/image.nvim",
 		},
 		config = function()
-				vim.keymap.set('n', "<leader>nt", ":Neotree filesystem reveal right<CR>")
+				vim.keymap.set('n', "<leader>nt", ":Neotree filesystem reveal left<CR>")
 				vim.keymap.set('n', "<leader>nc", ":Neotree filesystem close<CR>")
         require("neo-tree").setup({
             close_if_last_window = true,
