@@ -15,3 +15,5 @@ vim.cmd("set scrolloff=15")
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pd", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>hi", ":set hlsearch!<CR>")
+vim.keymap.set("n", "<leader>sp", ":sp<CR>")
+vim.keymap.set("n", "<leader>vs", ":vs<CR>")
