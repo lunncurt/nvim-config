@@ -15,9 +15,8 @@ return {
 				close_if_last_window = true,
 				enable_git_status = true,
 				enable_diagnostics = true,
-				hijack_netrw_behavior = "open_default",
+				hijack_netrw_behavior = "open_current",
 				window = {
-					position = "left",
 					width = 30,
 				},
 				follow_current_file = {
