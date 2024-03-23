@@ -16,11 +16,17 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
+      local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
-			lspconfig.clangd.setup({})
-			lspconfig.marksman.setup({})
-			lspconfig.ruff_lsp.setup({})
-			lspconfig.lua_ls.setup({})
+			lspconfig.clangd.setup({
+        capabilities = capabilities
+      })
+			lspconfig.ruff_lsp.setup({
+        capabilities = capabilities
+      })
+			lspconfig.lua_ls.setup({
+        capabilities = capabilities
+      })
 
 			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts) --go to declaration
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts) --go to definition
