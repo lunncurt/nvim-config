@@ -9,6 +9,7 @@ return {
       handlers = {},
       ensure_installed = {
         "codelldb",
+        "debugpy",
       },
     },
   },
