@@ -1,2 +1,2 @@
 # Personal nvim config files
-Currently working on auto completion and c++ config
+Currently working on tuning C/C++ capabilities and CMake integration
