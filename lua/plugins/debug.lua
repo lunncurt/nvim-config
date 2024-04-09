@@ -49,6 +49,10 @@ return {
       local dap = require("dap")
       vim.keymap.set("n", "<Leader>bt", dap.toggle_breakpoint, {})
       vim.keymap.set("n", "<Leader>dt", dap.continue, {})
+      vim.keymap.set("n", "<Leader>ds", function() dap.terminate() end)
+      vim.keymap.set("n", "<Leader>dc", function() dap.continue() end)
+      vim.keymap.set("n", "<Leader>so", function() dap.step_over() end)
+      vim.keymap.set("n", "<Leader>si", function() dap.step_into() end)
     end,
   },
 }
