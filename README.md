@@ -1,2 +1,4 @@
 # Personal nvim config files
-Currently working on tuning C/C++ capabilities and CMake integration
+Currently working on:
+    - C++ dev support/CMake config
+    - git integration (lazygit w/ toggleterm?)
