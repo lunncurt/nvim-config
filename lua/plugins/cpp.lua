@@ -3,6 +3,8 @@ return {
 		"Civitasv/cmake-tools.nvim",
 		dependencies = { "stevearc/overseer.nvim", "akinsho/toggleterm.nvim" },
 		config = function()
+      vim.keymap.set("n", "<leader>cb", ":CMakeBuild<CR>")
+      vim.keymap.set("n", "<leader>cr", ":CMakeRun<CR>")
 			require("cmake-tools").setup({
 				cmake_executor = { -- executor to use
 					name = "quickfix", -- name of the executor
