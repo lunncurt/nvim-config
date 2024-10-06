@@ -5,6 +5,7 @@ return {
 		config = function()
       vim.keymap.set("n", "<leader>cb", ":CMakeBuild<CR>")
       vim.keymap.set("n", "<leader>cr", ":CMakeRun<CR>")
+      vim.keymap.set("n", "<leader>cd", ":CMakeDebug<CR>")
 			require("cmake-tools").setup({
 				cmake_executor = { -- executor to use
 					name = "quickfix", -- name of the executor
@@ -24,7 +25,7 @@ return {
 							new_task_opts = {
 								strategy = {
 									"toggleterm",
-									direction = "horizontal",
+									direction = "float",
 									autos_croll = true,
 									quit_on_exit = "success",
 								},
@@ -50,7 +51,7 @@ return {
 					},
 				},
 				cmake_runner = { -- runner to use
-					name = "overseer", -- name of the runner
+					name = "toggleterm", -- name of the runner
 					opts = {}, -- the options the runner will get, possible values depend on the runner type. See `default_opts` for possible values.
 					default_opts = { -- a list of default and possible values for runners
 						quickfix = {
