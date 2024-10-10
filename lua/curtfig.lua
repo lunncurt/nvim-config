@@ -15,6 +15,8 @@ vim.cmd("set scrolloff=15")
 vim.cmd("set pumheight=8")
 vim.cmd("set pumwidth=2")
 
+vim.cmd("set background=dark")
+
 --remaps
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pd", vim.cmd.Ex)
