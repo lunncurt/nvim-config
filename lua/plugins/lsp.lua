@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "clangd", "marksman", "ruff_lsp", "lua_ls", "omnisharp" },
+        ensure_installed = { "clangd", "marksman", "pylsp", "lua_ls"},
       })
     end,
   },
@@ -21,7 +21,7 @@ return {
       lspconfig.clangd.setup({
         capabilities = capabilities,
       })
-      lspconfig.ruff_lsp.setup({
+      lspconfig.pylsp.setup({
         capabilities = capabilities,
       })
       lspconfig.lua_ls.setup({
