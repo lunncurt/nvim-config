@@ -4,10 +4,12 @@ return {
 	config = function()
 		require("lualine").setup({
 			sections = {
-				lualine_x = { "encoding", { "fileformat", symbols = { unix = "" } }, "filetype" },
+				lualine_x = { "encoding", { "fileformat", symbols = { unix = "archbtw" } }, "filetype" },
 			},
 			options = {
 				theme = "gruvbox-material",
+        section_separators = '',
+        component_separators = '|',
 			},
 		})
 	end,
