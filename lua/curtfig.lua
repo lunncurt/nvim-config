@@ -1,4 +1,4 @@
---set indent spacing
+--set indent spacingtele
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
@@ -14,13 +14,10 @@ vim.cmd("set scrolloff=15")
 --fold method, leave folds open on open, show foldcolumn
 vim.cmd("set foldmethod=indent")
 vim.cmd("set foldlevel=99")
-vim.cmd("set foldcolumn=1")
 
 --lsp suggestions and width
 vim.cmd("set pumheight=8")
 vim.cmd("set pumwidth=2")
-
-vim.cmd("set background=dark")
 
 --remaps
 vim.g.mapleader = " "
