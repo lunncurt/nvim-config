@@ -1,12 +1,18 @@
 return {
 	{
 		"Civitasv/cmake-tools.nvim",
-		dependencies = { "stevearc/overseer.nvim", "akinsho/toggleterm.nvim" },
+		dependencies = { "akinsho/toggleterm.nvim" },
 		config = function()
       vim.keymap.set("n", "<leader>cb", ":CMakeBuild<CR>")
       vim.keymap.set("n", "<leader>cr", ":CMakeRun<CR>")
       vim.keymap.set("n", "<leader>cd", ":CMakeDebug<CR>")
 			require("cmake-tools").setup({
+				cmake_generate_options = {
+					"-DCMAKE_EXPORT_COMPILE_COMMANDS=1",
+					"-DCMAKE_CXX_STANDARD=20",
+					"-DCMAKE_CXX_STANDARD_REQUIRED=ON",
+					"-DCMAKE_CXX_EXTENSIONS=OFF",
+				},
 				cmake_executor = { -- executor to use
 					name = "quickfix", -- name of the executor
 					opts = {}, -- the options the executor will get, possible values depend on the executor type. See `default_opts` for possible values.

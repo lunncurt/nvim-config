@@ -19,6 +19,7 @@ vim.cmd("set foldcolumn=1")
 --lsp suggestions and width
 vim.cmd("set pumheight=8")
 vim.cmd("set pumwidth=2")
+vim.cmd("set updatetime=250")
 
 vim.cmd("set background=dark")
 
